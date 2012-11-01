@@ -27,7 +27,13 @@
         <title>Hello World</title>
         <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery.mobile-1.2.0.min.js"></script>
-        <script type="text/javascript" src="cordova-android-2.1.0.js"></script>
+        <script>
+        if ( navigator.userAgent == "WowAeroGear Cordova Webview iOS" ) {
+            document.write( '<script src="js/libs/cordova-ios-2.1.0.js"><\/script>' );
+        } else {
+            document.write( '<script src="js/libs/cordova-android-2.1.0.js"><\/script>' );
+        }
+       </script>
     </head>
     <body>
             <div data-role="page" id="main">

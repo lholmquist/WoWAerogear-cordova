@@ -1,5 +1,4 @@
 $( function() {
-    alert("in");
     var url = "http://us.battle.net/api/wow/achievement/2",
         baseURL = "http://us.battle.net/api/wow/";
 
